@@ -14,11 +14,11 @@ class Account {
     private double credit;
     private Client owner;
 
-    public Account(int id, double credit, Client owner) {
+    public Account(int id, double credit) {
         this.id = id;
         this.credit = credit;
-        this.owner = owner;
-    }
+ 
+    }   
 
     public int getId() {
         return id;
@@ -42,6 +42,11 @@ class Account {
 
     public void setOwner(Client owner) {
         this.owner = owner;
+    }
+
+    @Override
+    public String toString() {
+        return "id= " + id + " credit= " + credit + " owner= " + owner ;
     }
     
 }

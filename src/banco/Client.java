@@ -13,9 +13,23 @@ package banco;
 public class Client extends Person {
     private Manager manager;
 
-    public Client(String nombre, Manager manager) {
+    public Client(String nombre) {
         super(nombre);
-        this.manager= manager;
+    }
+
+    public Manager getManager() {
+        return manager;
+    }
+
+    public void setManager(Manager manager) {
+        this.manager = manager;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" + "manager=" + manager + '}';
     }
     
+
+
 }

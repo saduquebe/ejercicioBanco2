@@ -23,5 +23,6 @@ public abstract class Person {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
- 
+
+    
 }
